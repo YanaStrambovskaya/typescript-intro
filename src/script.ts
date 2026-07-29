@@ -1,10 +1,10 @@
-function calculateAverage(arr: number[]): number | undefined {
-  if (arr.length === 0) return undefined;
-
-  const sum = arr.reduce((acc, current) => {
-    return acc + current;
-  }, 0);
-
-  const average = sum / arr.length;
-  return average;
+type Product = {
+  name: string;
+  price: number;
+  available: boolean;
+};
+function getProductInfo({ name, price, available }: Product): string {
+  return `Товар: ${name}, Ціна: ${price} грн., В наявності: ${
+    available ? "Так" : "Ні"
+  }`;
 }

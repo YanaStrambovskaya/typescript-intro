@@ -1,11 +1,5 @@
 "use strict";
-function calculateAverage(arr) {
-    if (arr.length === 0)
-        return undefined;
-    const sum = arr.reduce((acc, current) => {
-        return acc + current;
-    }, 0);
-    const average = sum / arr.length;
-    return average;
+function getProductInfo({ name, price, available }) {
+    return `Товар: ${name}, Ціна: ${price} грн., В наявності: ${available ? "Так" : "Ні"}`;
 }
 //# sourceMappingURL=script.js.map
