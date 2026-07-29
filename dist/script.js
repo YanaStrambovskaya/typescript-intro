@@ -1,5 +1,11 @@
 "use strict";
-function getProductInfo({ name, price, available }) {
-    return `Товар: ${name}, Ціна: ${price} грн., В наявності: ${available ? "Так" : "Ні"}`;
+function createTree(depth) {
+    if (depth <= 0)
+        return null;
+    return {
+        value: depth,
+        child: depth === 1 ? null : createTree(depth - 1),
+    };
 }
+createTree(3);
 //# sourceMappingURL=script.js.map

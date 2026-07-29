@@ -1,10 +1,13 @@
-type Product = {
-  name: string;
-  price: number;
-  available: boolean;
+type node = {
+  value: number;
+  child: node | null;
 };
-function getProductInfo({ name, price, available }: Product): string {
-  return `Товар: ${name}, Ціна: ${price} грн., В наявності: ${
-    available ? "Так" : "Ні"
-  }`;
+
+function createTree(depth: number): node | null {
+  if (depth <= 0) return null;
+  return {
+    value: depth,
+    child: depth === 1 ? null : createTree(depth - 1),
+  };
 }
+createTree(3);
