@@ -1,11 +1,10 @@
 "use strict";
-function createTree(depth) {
-    if (depth <= 0)
-        return null;
-    return {
-        value: depth,
-        child: depth === 1 ? null : createTree(depth - 1),
-    };
+function reverseArray(arr) {
+    // Generic type
+    return arr.reverse();
 }
-createTree(3);
+const arr = [1, 2, 3];
+const reversed = reverseArray(arr);
+console.log(reversed);
+console.log(arr === reversed); // true
 //# sourceMappingURL=script.js.map

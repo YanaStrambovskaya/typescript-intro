@@ -1,13 +1,9 @@
-type node = {
-  value: number;
-  child: node | null;
-};
-
-function createTree(depth: number): node | null {
-  if (depth <= 0) return null;
-  return {
-    value: depth,
-    child: depth === 1 ? null : createTree(depth - 1),
-  };
+function reverseArray<T>(arr: T[]): T[] {
+  // Generic type
+  return arr.reverse();
 }
-createTree(3);
+const arr = [1, 2, 3];
+const reversed = reverseArray(arr);
+
+console.log(reversed);
+console.log(arr === reversed); // true
