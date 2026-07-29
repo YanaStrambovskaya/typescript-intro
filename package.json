@@ -1,0 +1,18 @@
+{
+  "name": "express-server-hw",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "node scripts/check.js",
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "typescript": "^7.0.2"
+  }
+}
