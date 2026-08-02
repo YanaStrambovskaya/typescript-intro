@@ -12,9 +12,9 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
-    "sourceMap": true
+    "sourceMap": true,
 
-    // "types": ["node"]
+    "types": ["node"]
   },
 
   "include": ["src"],

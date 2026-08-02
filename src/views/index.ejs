@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Forbidden Words Checker</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <label>
+          <span>Enter text to check</span>
+          <input type="text" name="text" placeholder="Enter text" required />
+        </label>
+
+        <label>
+          <span>Enter forbidden words (comma-separated)</span>
+          <input
+            type="text"
+            name="forbiddenWords"
+            placeholder="Enter forbidden words"
+          />
+        </label>
+
+        <button type="submit">Check</button>
+      </form>
+
+      <div id="fixedSentence" hidden>
+        <span>Filtered text:</span>
+        <span id="filteredText"></span>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
